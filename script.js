@@ -10,5 +10,5 @@ var randomDragName = randomize(firstNames) + " " + randomize(lastNames);
 document.getElementById("dragNameButton").addEventListener("click", dragName);
 
 function dragName() {
-    document.getElementById("dragNameButton").innerHTML = randomDragName;
+    document.getElementById("dragNameText").innerHTML = randomDragName;
 }
