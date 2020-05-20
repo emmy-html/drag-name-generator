@@ -1,8 +1,14 @@
 var firstNames = ["Jackie", "Harmony", "Paris", "Londyn", "Nina"];
-var randomFirstName = firstNames[Math.floor(Math.random(firstNames) * firstNames.length)];
+var lastNames = ["Moody", "Ludicrous", "Fancie", "Poise", "Icy"];
 
 function randomize(array) {
 return array[Math.floor(Math.random(array) * array.length)];
 }
 
-console.log(randomize(firstNames));
+var randomDragName = randomize(firstNames) + " " + randomize(lastNames);
+
+document.getElementById("dragNameButton").addEventListener("click", dragName);
+
+function dragName() {
+    document.getElementById("dragNameButton").innerHTML = randomDragName;
+}
