@@ -1,6 +1,7 @@
 // name options
 var firstNames = ["Jackie", "Harmony", "Paris", "Londyn", "Nina"];
 var lastNames = ["Moody", "Ludicrous", "Fancie", "Poise", "Icy"];
+var middleNames = ["Violet", "Magenta", "Blu", "Tangerine", "Honey"];
 
 // function to return a random name 
 function randomize(array) {
@@ -14,4 +15,5 @@ document.getElementById("dragNameButton").addEventListener("click", dragName);
         // add the random names together
         var randomDragName = randomize(firstNames) + " " + randomize(lastNames);
         document.getElementById("dragNameText").innerHTML = randomDragName;
+        document.getElementById("dragNameButton").innerHTML = "Drag Me Again!";
     }
