@@ -3,24 +3,63 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>What's Your Drag Name?</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="css/main.scss" <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
-  <button id="dragNameButton">Drag Me!</button>
-  <p>Your drag name is...</p>
-  <p id="dragNameText"></p>
+  <header>
+    <div class="content-wrapper">
+      <h1>What's your
+        <span>d</span><span>r</span><span>a</span><span>g</span>
+        <span>n</span><span>a</span><span>m</span><span>e</span><span>?</span></h1>
+    </div>
+  </header>
+  <main>
+    <section id="generator">
+      <div class="content-wrapper">
+        <p id="condragulations"></p>
+        <h2 id="dragNameText"></h2>
+        <p>Want a middle name?</p>
+           <input type="checkbox" id="middleNameOption" /> <label for="middleNameOption">Yes!</label>
+        <div class="drag-button">
+          <button id="dragNameButton">Drag Me!</button>
+        </div>
+      </div>
+    </section>
+    <section id="credits">
+      <div class="content-wrapper">
+        <h2>Shantay, you stayin'?</h2>
+        <div class="credits-options">
+          <article>
+            <p>Love your new name? Tweet about it!</p>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </article>
+          <article>
+            <p>Really love this generator? Support the creator!</p>
+            <a href="#"><i class="fab fa-github-alt"></i></a>
+            <a href="#"><i class="fab fa-gratipay"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="content-wrapper">
+      <p>What’s your drag name was created by <a href="#">Emmy Jordan</a> with no affiliation with RuPaul's Drag Race,
+        World of Wonder, VH1 or Viacom.</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
   <script src="js/main.js"></script>
 </body>
