@@ -10,6 +10,7 @@ function randomize(array) {
 
 // assign middle name checkbox to a variable
 var middle = document.getElementById("middleNameOption");
+var noMiddle = document.getElementById("noMiddle");
 
 // display the name on the page when button is clicked
 document.getElementById("dragNameButton").addEventListener("click", dragName);
@@ -23,10 +24,14 @@ function dragName() {
     randomize(middleNames) +
     " " +
     randomize(lastNames);
-  if (middle.checked === true) {
+  if (middle.checked === true && noMiddle.checked === true) {
+    document.getElementById("dragNameText").innerHTML = "Oh no she betta don't!";
+  } else if (noMiddle.checked === true) {
+    document.getElementById("dragNameText").innerHTML = randomDragName;
+  } else if (middle.checked === true) {
     document.getElementById("dragNameText").innerHTML = randomDragNameMiddle;
   } else {
-    document.getElementById("dragNameText").innerHTML = randomDragName;
+    document.getElementById("dragNameText").innerHTML = "You gotta pick something!";
   }
   document.getElementById("dragNameButton").innerHTML = "Drag Me Again!";
   document.getElementById("condragulations").innerHTML = "Condragulations! Your new name is...";
