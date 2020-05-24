@@ -79,6 +79,7 @@ textarea {
 
 /* Fonts */
 /* Colors */
+/* Style Variables */
 /* Universal Styles */
 body {
   background: #ef476f;
@@ -132,6 +133,7 @@ header .drag-name-img {
     text-transform: none; }
 #generator .drag-button button {
   background: #06d6a0;
+  border: none;
   border-radius: 220px;
   color: #ef476f;
   font-size: 1.5rem;
@@ -140,7 +142,8 @@ header .drag-name-img {
   margin-top: 25px;
   width: 220px; }
   #generator .drag-button button:hover {
-    background: white; }
+    background: linear-gradient(#ef4747, #f78c6b, #ffd166, #06d6a0, #118ab2, #8e47ef);
+    border: none; }
 
 /* Credit Section */
 #credits .credits-options {
@@ -152,12 +155,19 @@ header .drag-name-img {
     width: 300px; }
   #credits .credits-options i {
     margin: 0px 10px; }
+    #credits .credits-options i:hover {
+      color: #ffd166;
+      transition: 1s color; }
 
 /* Footer */
 footer {
-  width: 320px;
   margin: 0 auto;
+  width: 320px;
   text-align: justify; }
+  footer a:hover {
+    background-image: linear-gradient(#ef4747, #f78c6b, #ffd166, #06d6a0, #118ab2, #8e47ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 /* Extra Small Screens */
 @media (max-width: 375px) {

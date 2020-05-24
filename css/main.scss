@@ -105,6 +105,8 @@ $yellow: #ffd166;
 $green: #06d6a0;
 $blue: #118ab2;
 $purple: #8e47ef;
+/* Style Variables */
+$rainbow: linear-gradient($red, $orange, $yellow, $green, $blue, $purple);
 
 /* Universal Styles */
 body {
@@ -165,6 +167,7 @@ header {
   }
   .drag-button button {
     background: $green;
+    border: none;
     border-radius: 220px;
     color: $pink;
     font-size: 1.5rem;
@@ -173,7 +176,8 @@ header {
     margin-top: 25px;
     width: 220px;
     &:hover {
-      background: white;
+      background: $rainbow;
+      border: none;
     }
   }
 }
@@ -189,14 +193,23 @@ header {
     }
     i {
       margin: 0px 10px;
+      &:hover {
+        color: $yellow;
+        transition: 1s color;
+      }
     }
   }
 }
 /* Footer */
 footer {
-  width: 320px;
   margin: 0 auto;
+  width: 320px;
   text-align: justify;
+  a:hover {
+    background-image: $rainbow;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 /* Extra Small Screens */
 @media (max-width: 375px) {
