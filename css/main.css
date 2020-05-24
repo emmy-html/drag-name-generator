@@ -79,11 +79,15 @@ textarea {
 
 /* Fonts */
 /* Colors */
-/* Main Styles */
+/* Universal Styles */
 body {
   background: #ef476f;
+  color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px; }
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase; }
 
 .content-wrapper {
   margin: 0px 25px; }
@@ -92,8 +96,7 @@ h1, h2 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   letter-spacing: .10rem;
-  line-height: 3rem;
-  text-align: center; }
+  line-height: 3rem; }
 
 h1 {
   color: white;
@@ -102,6 +105,19 @@ h1 {
 h2 {
   color: #ffd166;
   text-transform: lowercase; }
+
+a:link,
+a:visited {
+  color: #06d6a0; }
+
+/* Drag Name Generator */
+#generator .results {
+  height: 150px; }
+  #generator .results #condragulations {
+    line-height: 1rem; }
+  #generator .results #dragNameText {
+    font-size: 2.5rem;
+    text-transform: none; }
 
 /* ==========================================================================
    Helper classes
