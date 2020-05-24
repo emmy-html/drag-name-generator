@@ -79,6 +79,30 @@ textarea {
 
 /* Fonts */
 /* Colors */
+/* Main Styles */
+body {
+  background: #ef476f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px; }
+
+.content-wrapper {
+  margin: 0px 25px; }
+
+h1, h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  letter-spacing: .10rem;
+  line-height: 3rem;
+  text-align: center; }
+
+h1 {
+  color: white;
+  font-size: 3rem; }
+
+h2 {
+  color: #ffd166;
+  text-transform: lowercase; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
