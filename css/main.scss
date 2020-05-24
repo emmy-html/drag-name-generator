@@ -95,8 +95,8 @@ textarea {
 }
 
 /* Fonts */
-$body-font: 'Montserrat', sans-serif;
-$heading-font: 'Shrikhand', cursive;
+$body-font: "Montserrat", sans-serif;
+$heading-font: "Shrikhand", cursive;
 /* Colors */
 $pink: #ef476f;
 $red: #ef4747;
@@ -114,15 +114,15 @@ body {
   font-weight: 700;
   font-size: 16px;
   text-align: center;
-  text-transform: uppercase;
 }
 .content-wrapper {
   margin: 0px 25px;
 }
-h1, h2 {
+h1,
+h2 {
   font-family: $heading-font;
   font-weight: 400;
-  letter-spacing: .10rem;
+  letter-spacing: 0.1rem;
   line-height: 3rem;
 }
 h1 {
@@ -133,13 +133,75 @@ h2 {
   color: $yellow;
   text-transform: lowercase;
 }
+p,
+label,
+button {
+  text-transform: uppercase;
+}
 a:link,
 a:visited {
   color: $green;
 }
+/* Header */
+header {
+  h1 span {
+    &:nth-of-type(1) {
+      color: $red;
+    }
+    &:nth-of-type(2) {
+      color: $orange;
+    }
+    &:nth-of-type(3) {
+      color: $yellow;
+    }
+    &:nth-of-type(4) {
+      color: $green;
+    }
+    &:nth-of-type(5) {
+      color: $blue;
+    }
+    &:nth-of-type(6) {
+      color: $purple;
+    }
+    &:nth-of-type(7) {
+      color: $red;
+    }
+    &:nth-of-type(8) {
+      color: $orange;
+    }
+    &:nth-of-type(9) {
+      color: $yellow;
+    }
+  }
+  .stroke {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: -80px;
+    z-index: -10;
+    -webkit-text-stroke: 5px white;
+}
+}
+/* Adjust font size for very small screens */
+@media (max-width: 360px) {
+  h1 {
+    font-size: 2rem;
+    span {
+      font-size: 2rem;
+    }
+    }
+
+    h1.stroke {
+      font-size: 2rem;
+      top: -70px;
+    }
+  }
 /* Drag Name Generator */
 #generator {
   .results {
+    padding: 25px 0px;
     #condragulations {
       line-height: 1rem;
     }
@@ -147,7 +209,17 @@ a:visited {
       font-size: 2.5rem;
       text-transform: none;
     }
-    height: 150px;
+    height: 125px;
+  }
+  .drag-button button {
+    background: $green;
+    border-radius: 220px;
+    color: $pink;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 220px;
+    margin-top: 25px;
+    width: 220px;
   }
 }
 /* ==========================================================================
@@ -314,4 +386,3 @@ a:visited {
     page-break-after: avoid;
   }
 }
-
