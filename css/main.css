@@ -116,44 +116,10 @@ a:visited {
   color: #06d6a0; }
 
 /* Header */
-header h1 span:nth-of-type(1) {
-  color: #ef4747; }
-header h1 span:nth-of-type(2) {
-  color: #f78c6b; }
-header h1 span:nth-of-type(3) {
-  color: #ffd166; }
-header h1 span:nth-of-type(4) {
-  color: #06d6a0; }
-header h1 span:nth-of-type(5) {
-  color: #118ab2; }
-header h1 span:nth-of-type(6) {
-  color: #8e47ef; }
-header h1 span:nth-of-type(7) {
-  color: #ef4747; }
-header h1 span:nth-of-type(8) {
-  color: #f78c6b; }
-header h1 span:nth-of-type(9) {
-  color: #ffd166; }
-header .stroke {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  top: -80px;
-  z-index: -10;
-  -webkit-text-stroke: 5px white; }
+header .drag-name-img {
+  width: 375px;
+  height: auto; }
 
-/* Adjust font size for very small screens */
-@media (max-width: 360px) {
-  h1 {
-    font-size: 2rem; }
-    h1 span {
-      font-size: 2rem; }
-
-  h1.stroke {
-    font-size: 2rem;
-    top: -70px; } }
 /* Drag Name Generator */
 #generator .results {
   padding: 25px 0px;
@@ -173,6 +139,14 @@ header .stroke {
   margin-top: 25px;
   width: 220px; }
 
+/* Extra Small Screens */
+@media (max-width: 375px) {
+  header h1 {
+    font-size: 2rem;
+    line-height: 2rem; }
+  header .drag-name-img {
+    width: 100%;
+    height: auto; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -144,60 +144,11 @@ a:visited {
 }
 /* Header */
 header {
-  h1 span {
-    &:nth-of-type(1) {
-      color: $red;
-    }
-    &:nth-of-type(2) {
-      color: $orange;
-    }
-    &:nth-of-type(3) {
-      color: $yellow;
-    }
-    &:nth-of-type(4) {
-      color: $green;
-    }
-    &:nth-of-type(5) {
-      color: $blue;
-    }
-    &:nth-of-type(6) {
-      color: $purple;
-    }
-    &:nth-of-type(7) {
-      color: $red;
-    }
-    &:nth-of-type(8) {
-      color: $orange;
-    }
-    &:nth-of-type(9) {
-      color: $yellow;
-    }
+  .drag-name-img {
+    width: 375px;
+    height: auto;
   }
-  .stroke {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    top: -80px;
-    z-index: -10;
-    -webkit-text-stroke: 5px white;
 }
-}
-/* Adjust font size for very small screens */
-@media (max-width: 360px) {
-  h1 {
-    font-size: 2rem;
-    span {
-      font-size: 2rem;
-    }
-    }
-
-    h1.stroke {
-      font-size: 2rem;
-      top: -70px;
-    }
-  }
 /* Drag Name Generator */
 #generator {
   .results {
@@ -220,6 +171,19 @@ header {
     height: 220px;
     margin-top: 25px;
     width: 220px;
+  }
+}
+/* Extra Small Screens */
+@media (max-width: 375px) {
+  header {
+    h1 {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+    .drag-name-img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 /* ==========================================================================
