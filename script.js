@@ -26,13 +26,16 @@ function dragName() {
     randomize(lastNames);
   if (middle.checked === true && noMiddle.checked === true) {
     document.getElementById("dragNameText").innerHTML = "Oh no she betta don't!";
+    document.getElementById("dragNameButton").innerHTML = "Drag Me!";
   } else if (noMiddle.checked === true) {
     document.getElementById("dragNameText").innerHTML = randomDragName;
+    document.getElementById("dragNameButton").innerHTML = "Drag Me Again!";
   } else if (middle.checked === true) {
     document.getElementById("dragNameText").innerHTML = randomDragNameMiddle;
+    document.getElementById("dragNameButton").innerHTML = "Drag Me Again!";
   } else {
-    document.getElementById("dragNameText").innerHTML = "You gotta pick something!";
+    document.getElementById("dragNameText").innerHTML = "You gotta get sickening, baby!";
+    document.getElementById("dragNameButton").innerHTML = "Drag Me!";
   }
-  document.getElementById("dragNameButton").innerHTML = "Drag Me Again!";
   document.getElementById("condragulations").innerHTML = "Condragulations! Your new name is...";
 }
